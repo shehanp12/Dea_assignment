@@ -412,18 +412,29 @@
 			  </div>
 			  <div class="modal-body mx-3">
 				  <form id="login-form" action="<%= request.getContextPath() %>/login" method="post" >
+						  <%
+		String err = "";
+		if (request.getAttribute("err") != null) {
+			err = (String) request.getAttribute("err");
+		}
+	%>
+
+								  <% String mess="";
+				if (request.getAttribute("mess") != null){
+					mess= (String) request.getAttribute("mess");%>
+							  <li style="color: red"><%=mess%></li>
+								  <% }%>
+							  <li style="color: red"><%=err%></li>
 					  <div class="input-field">
 						  <i class="fas fa-envelope prefix grey-text"></i>
 						  <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
 						  <input type="email" id="defaultForm-email" name="Email" class="form-control validate" >
-
 					  </div>
 
 					  <div class="input-field">
 						  <i class="fas fa-lock prefix grey-text"></i>
 						  <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
 						  <input type="password" id="defaultForm-pass" name="Password" class="form-control validate" >
-
 					  </div>
 
 			  </div>
@@ -436,8 +447,6 @@
   </div>
 
   <!--end of login-->
-
-
 			  </body>
 
 			  </html>

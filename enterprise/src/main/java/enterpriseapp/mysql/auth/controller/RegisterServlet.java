@@ -18,7 +18,11 @@ public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         EmployeeDao employeeDao = new EmployeeDao();
-         UserDAOImpl userDAO = new UserDAOImpl();
+         UserDAOImpl userDAO = new UserDAOImpl() {
+
+
+
+         };
 
         String Name = request.getParameter("Name");
         String Email = request.getParameter("Email");
@@ -56,11 +60,11 @@ public class RegisterServlet extends HttpServlet {
             try {
                 if (err.length() == 0) {
                     HttpSession session = request.getSession();
-                    session.setAttribute("Name",Name);
+                    session.setAttribute("Email",Email);
 
                     employeeDao.registerEmployee(user);
-                    userDAO.login(Name, Password);
-                    Cookie loginCookie = new Cookie("Name",Name);
+                    userDAO.login(Email, Password);
+                    Cookie loginCookie = new Cookie("Email",Email);
                     //setting cookie to expiry in 30 mins
                     loginCookie.setMaxAge(30*60);
                     response.addCookie(loginCookie);

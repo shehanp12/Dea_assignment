@@ -15,14 +15,14 @@ public class LoginServelet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String Name = request.getParameter("Name");
+        String Email = request.getParameter("Email");
         String Password = request.getParameter("Password");
 
         String err = "";
-        if (Name.equals("") || Password.equals("")) {
+        if (Email.equals("") || Password.equals("")) {
             err += "Please enter details";
         } else {
-            if (userDAO.login(Name, Password) == false) {
+            if (userDAO.login(Email, Password) == false) {
                 err += "Details are wrong!";
             }
         }
@@ -31,29 +31,29 @@ public class LoginServelet extends HttpServlet {
             request.setAttribute("err", err);
         }
 
-//        String url = "/login.jsp";
+    String    url = "/Error.jsp";
         try {
             if (err.length() == 0) {
                 HttpSession session = request.getSession();
-                session.setAttribute("Name", Name);
+                session.setAttribute("Email", Email);
 
-                userDAO.login(Name,Password);
-                Cookie loginCookie = new Cookie("Name",Name);
+                userDAO.login(Email,Password);
+                Cookie loginCookie = new Cookie("Email",Email);
                 //setting cookie to expiry in 30 mins
                 loginCookie.setMaxAge(30*60);
                 response.addCookie(loginCookie);
                 response.sendRedirect("account.jsp");
-//                url = "/index.jsp";
+//               url = "/index.jsp";
             } else {
-//                url = "/Error.jsp";
-                RequestDispatcher rd = getServletContext()
-                        .getRequestDispatcher("/Error.jsp");
-                rd.forward(request, response);
+               url = "/Error.jsp";
+            RequestDispatcher rd = getServletContext()
+                       .getRequestDispatcher("/Error.jsp");
+             rd.forward(request, response);
             }
 
         } catch (Exception e) {
             e.printStackTrace();
-            response.sendRedirect("/Error.jsp");
+       response.sendRedirect("/Error.jsp");
         }
     }
 
