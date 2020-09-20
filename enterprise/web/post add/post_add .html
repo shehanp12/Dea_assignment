@@ -72,9 +72,9 @@
 		<div class="container">
 			<h2 class="w3-head" style="color:#0099CC;" >Post an Ad</h2>
 		  <div class="post-ad-form">
-				<form>
+				<form action="Post_ad.java" method="POST">
 					<label>Select Category <span>*</span></label>
-					<select class="">
+					<select class="" id="category" name="sCategory">
 					  <option>Select Category</option>
 					  <option>Mobiles</option>
 					  <option>Electronics and Appliances</option>
@@ -90,10 +90,10 @@
 					</select>
 					<div class="clearfix"></div>
 					<label>Ad Title <span>*</span></label>
-					<input type="text" class="phone" placeholder="">
+					<input type="text" class="phone" placeholder="" name="title">
 					<div class="clearfix"></div>
 					<label>Ad Description <span>*</span></label>
-					<textarea class="mess" placeholder="Write few lines about your product"></textarea>
+					<textarea class="mess" placeholder="Write few lines about your product" name="description"></textarea>
 					<div class="clearfix"></div>
 				<div class="upload-ad-photos">
 				<label>Photos for your ad :</label>	
@@ -102,25 +102,25 @@
 						
 						
 
-						</form>
+
 
 						
-							<input style="color: #B30D10;" id="file-input" type="file" multiple>
+							<input style="color: #B30D10;" id="file-input" type="file" multiple name="photo">
 					
                        <div id="preview"></div>
 
 						<br>
 						</div>
 					<div class="personal-details">
-					<form>
+
 						<label>Your Name <span>*</span></label>
-						<input type="text" class="name" placeholder="">
+						<input type="text" class="name" placeholder="" name="name">
 						
 						<label>Your Mobile No <span>*</span></label>
-						<input type="text" class="phone" placeholder="">
+						<input type="text" class="phone" placeholder="" name="phone">
 						
 						<label>Your Email Address<span>*</span></label>
-						<input type="text" class="email" placeholder="">
+						<input type="text" class="email" placeholder="" name="email">
 						
 					<input type="submit" value="Post">					
 					
