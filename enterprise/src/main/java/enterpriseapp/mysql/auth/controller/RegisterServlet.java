@@ -10,6 +10,7 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -19,8 +20,6 @@ public class RegisterServlet extends HttpServlet {
 
         EmployeeDao employeeDao = new EmployeeDao();
          UserDAOImpl userDAO = new UserDAOImpl() {
-
-
 
          };
 
@@ -34,7 +33,7 @@ public class RegisterServlet extends HttpServlet {
         user.setPassword(Password);
 
         String err = "";
-        String url = "/register.jsp";
+        String url = "Error.jsp";
 
 
         if (Name.equals("") || Email.equals("") || Password.equals("") ) {
@@ -71,35 +70,29 @@ public class RegisterServlet extends HttpServlet {
                     response.sendRedirect("account.jsp");
 
                 } else {
-                    url = "/register.jsp";
-                    RequestDispatcher rd = getServletContext()
-                            .getRequestDispatcher(url);
-                    rd.forward(request, response);
+                    url = "Error.jsp";
+
+                  HttpSession session=request.getSession();
+                  session.setAttribute("err",err);
+
+                response.sendRedirect(url);
+
+//                    PrintWriter out = response.getWriter();
+//                    out.println(err);
+
                 }
 
             } catch (Exception e) {
                 e.printStackTrace();
-                response.sendRedirect("/register.jsp");
+                url = "Error.jsp";
+
+//                Cookie error= new Cookie("err", err);
+//                response.addCookie(error);
+                response.sendRedirect(url);
             }
 
 
-
-
-
-
-
-//
-//                employeeDao.registerEmployee(user);
-//            } catch (ClassNotFoundException e) {
-//                e.printStackTrace();
-//            }
-
-//        response.sendRedirect("signin.jsp");
-
         }
-
-
-
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
