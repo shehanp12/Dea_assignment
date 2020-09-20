@@ -39,12 +39,15 @@
 			</div>
 
 			</div>
+		<div class="header_top">
+			<div class="row">
+				<div class="column" ><div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="" /></a>
+				</div></div>
+				<div class="column" align="right"><button type="submit" class="Button">Post Your Ads</button></div>
+			</div>
 
 
-			<div>
-<p> &nbsp;
-  	      </p>
-			  </div>
 
 	 <div class="clear"></div>
   </div>
@@ -71,18 +74,16 @@
 				<div class="categories">
 				  <ul>
 				  	<h3>Categories</h3>
-				      <li><a href="#">Mobile Phones</a></li>
-				      <li><a href="#">Desktop</a></li>
-				      <li><a href="#">Laptop</a></li>
-				      <li><a href="#">Accessories</a></li>
-				      <li><a href="#">Software</a></li>
-				       <li><a href="#">Sports &amp; Fitness</a></li>
-				       <li><a href="#">Footwear</a></li>
-				       <li><a href="#">Jewellery</a></li>
-				       <li><a href="#">Clothing</a></li>
-				       <li><a href="#">Home Decor &amp; Kitchen</a></li>
-				       <li><a href="#">Beauty &amp; Healthcare</a></li>
-				       <li><a href="#">Toys, Kids &amp; Babies</a></li>
+					  <li><a href="#">Electronics</a></li>
+					  <li><a href="#">Vehicle</a></li>
+					  <li><a href="#">Property</a></li>
+					  <li><a href="#">Jobs in Sri Lanka</a></li>
+					  <li><a href="#">Animals</a></li>
+					  <li><a href="#">Sports &amp; Fitness</a></li>
+					  <li><a href="#">Clothing</a></li>
+					  <li><a href="#">Home Decor &amp; Kitchen</a></li>
+					  <li><a href="#">Beauty &amp; Healthcare</a></li>
+					  <li><a href="#">Toys, Kids &amp; Babies</a></li>
 				  </ul>
 				</div>					
 	  	     </div>
@@ -146,7 +147,7 @@
     <div class="content">
     	<div class="content_top">
     		<div class="heading">
-    		<h3>New ADVERtisement</h3>
+    		<h3>New Advertisement</h3>
     		</div>
     		<div class="see">
     			<p><a href="#">See all Ads</a></p>
@@ -350,7 +351,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-	   aria-hidden="true">
+	   aria-hidden="true">+-
 	  <div class="modal-dialog" role="document">
 		  <div class="modal-content">
 			  <div class="modal-header text-center">
