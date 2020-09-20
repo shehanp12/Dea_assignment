@@ -419,12 +419,12 @@
 		}
 	%>
 
-								  <% String mess="";
-				if (request.getAttribute("mess") != null){
-					mess= (String) request.getAttribute("mess");%>
-							  <li style="color: red"><%=mess%></li>
-								  <% }%>
-							  <li style="color: red"><%=err%></li>
+<%--								  <% String mess="";--%>
+<%--				if (request.getAttribute("mess") != null){--%>
+<%--					mess= (String) request.getAttribute("mess");%>--%>
+<%--							  <li style="color: red"><%=mess%></li>--%>
+<%--								  <% }%>--%>
+<%--							  <li style="color: red"><%=err%></li>--%>
 					  <div class="input-field">
 						  <i class="fas fa-envelope prefix grey-text"></i>
 						  <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
