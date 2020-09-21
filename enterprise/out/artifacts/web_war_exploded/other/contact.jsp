@@ -38,10 +38,10 @@
 	     	<div class="menu">
 	     		<ul>
 			    	<li><a href="../home.jsp">Home</a></li>
-			    	<li><a href="about.html">About</a></li>
+			    	<li><a href="about.jsp">About</a></li>
 			    	
-			    	<li><a href="news.html">News</a></li>
-			    	<li class="active"><a href="contact.html">Contact</a></li>
+			    	<li><a href="news.jsp">News</a></li>
+			    	<li class="active"><a href="contact.jsp">Contact</a></li>
 			    	<div class="clear"></div>
      			</ul>
 	     	</div>
@@ -110,27 +110,27 @@
 				<div class="col_1_of_4 span_1_of_4">
 						<h4>Information</h4>
 						<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Customer Service</a></li>
+						<li><a href="about.jsp">About Us</a></li>
+						<li><a href="contact.jsp">Customer Service</a></li>
 						<li><a href="#">Advanced Search</a></li>
-						<li><a href="delivery.html">Orders and Returns</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="delivery.jsp">Orders and Returns</a></li>
+						<li><a href="contact.jsp">Contact Us</a></li>
 						</ul>
 					</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>Why buy from us</h4>
 						<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Customer Service</a></li>
+						<li><a href="about.jsp">About Us</a></li>
+						<li><a href="contact.jsp">Customer Service</a></li>
 						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="contact.html">Site Map</a></li>
+						<li><a href="contact.jsp">Site Map</a></li>
 						<li><a href="#">Search Terms</a></li>
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>My account</h4>
 						<ul>
-							<li><a href="contact.html">Sign In</a></li>
+							<li><a href="contact.jsp">Sign In</a></li>
 							
 						</ul>
 				</div>

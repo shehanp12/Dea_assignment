@@ -73,7 +73,14 @@ public class RegisterServlet extends HttpServlet {
                     //setting cookie to expiry in 30 mins
                     loginCookie.setMaxAge(30*60);
                     response.addCookie(loginCookie);
-                    response.sendRedirect("account.jsp");
+
+
+                    if(name == null){
+                        response.sendRedirect("home.jsp");
+                    }else{
+                        response.sendRedirect("account.jsp");
+                    }
+
 
                 } else {
                     url = "Error.jsp";

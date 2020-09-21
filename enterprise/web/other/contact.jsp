@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML>
 <head>
-<title>Free Home Shoppe Website Template | Contact :: w3layouts</title>
+<title></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="../css/style.css" rel="stylesheet" type="text/css" media="all"/>
@@ -20,8 +20,7 @@
 				<ul>
 					<li><a href="#">Register</a></li>
 					<li><a href="#">Login</a></li>
-					<li><a href="#">Delivery</a></li>
-					<li><a href="#">Checkout</a></li>
+					
 					<li><a href="#">My Account</a></li>
 				</ul>
 			</div>
@@ -31,50 +30,18 @@
 			<div class="logo">
 				<a href="../home.jsp"><img src="../images/logo.png" alt="" /></a>
 			</div>
-			  <div class="cart">
-			  	   <p>Welcome to our Online Store! <span>Cart:</span><div id="dd" class="wrapper-dropdown-2"> 0 item(s) - $0.00
-			  	   	<ul class="dropdown">
-							<li>you have no items in your Shopping cart</li>
-					</ul></div></p>
-			  </div>
-			  <script type="text/javascript">
-			function DropDown(el) {
-				this.dd = el;
-				this.initEvents();
-			}
-			DropDown.prototype = {
-				initEvents : function() {
-					var obj = this;
-
-					obj.dd.on('click', function(event){
-						$(this).toggleClass('active');
-						event.stopPropagation();
-					});	
-				}
-			}
-
-			$(function() {
-
-				var dd = new DropDown( $('#dd') );
-
-				$(document).click(function() {
-					// all dropdowns
-					$('.wrapper-dropdown-2').removeClass('active');
-				});
-
-			});
-
-		</script>
+			<div class="column" align="right"><button type="submit" class="Button">Post Your Ads</button></div>
+			  
 	 <div class="clear"></div>
   </div>
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
 			    	<li><a href="../home.jsp">Home</a></li>
-			    	<li><a href="about.html">About</a></li>
-			    	<li><a href="delivery.html">Delivery</a></li>
-			    	<li><a href="news.html">News</a></li>
-			    	<li class="active"><a href="contact.html">Contact</a></li>
+			    	<li><a href="about.jsp">About</a></li>
+			    	
+			    	<li><a href="news.jsp">News</a></li>
+			    	<li class="active"><a href="contact.jsp">Contact</a></li>
 			    	<div class="clear"></div>
      			</ul>
 	     	</div>
@@ -143,31 +110,28 @@
 				<div class="col_1_of_4 span_1_of_4">
 						<h4>Information</h4>
 						<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Customer Service</a></li>
+						<li><a href="about.jsp">About Us</a></li>
+						<li><a href="contact.jsp">Customer Service</a></li>
 						<li><a href="#">Advanced Search</a></li>
-						<li><a href="delivery.html">Orders and Returns</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="delivery.jsp">Orders and Returns</a></li>
+						<li><a href="contact.jsp">Contact Us</a></li>
 						</ul>
 					</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>Why buy from us</h4>
 						<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Customer Service</a></li>
+						<li><a href="about.jsp">About Us</a></li>
+						<li><a href="contact.jsp">Customer Service</a></li>
 						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="contact.html">Site Map</a></li>
+						<li><a href="contact.jsp">Site Map</a></li>
 						<li><a href="#">Search Terms</a></li>
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>My account</h4>
 						<ul>
-							<li><a href="contact.html">Sign In</a></li>
-							<li><a href="../home.jsp">View Cart</a></li>
-							<li><a href="#">My Wishlist</a></li>
-							<li><a href="#">Track My Order</a></li>
-							<li><a href="contact.html">Help</a></li>
+							<li><a href="contact.jsp">Sign In</a></li>
+							
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">

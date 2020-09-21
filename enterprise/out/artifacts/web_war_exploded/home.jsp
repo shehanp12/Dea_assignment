@@ -30,7 +30,7 @@
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link waves-effect" href="#"  data-toggle="modal" data-target="#modalLoginForm">
+						<a class="nav-link waves-effect" href="account.jsp"  >
 							My Account
 						</a>
 					</li>
@@ -39,12 +39,15 @@
 			</div>
 
 			</div>
+		<div class="header_top">
+			<div class="row">
+				<div class="column" ><div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="" /></a>
+				</div></div>
+				<div class="column" align="right"><button type="submit" class="Button">Post Your Ads</button></div>
+			</div>
 
 
-			<div>
-<p> &nbsp;
-  	      </p>
-			  </div>
 
 	 <div class="clear"></div>
   </div>
@@ -52,10 +55,10 @@
 	     	<div class="menu">
 	     		<ul>
 			    	<li class="active"><a href="home.jsp">Home</a></li>
-			    	<li><a href="other/about.html">About</a></li>
-			    	<li><a href="other/delivery.html">Delivery</a></li>
-			    	<li><a href="other/news.html">News</a></li>
-			    	<li><a href="other/contact.html">Contact</a></li>
+			    	<li><a href="other/about.jsp">About</a></li>
+			    	<li><a href="other/delivery.jsp">Delivery</a></li>
+			    	<li><a href="other/news.jsp">News</a></li>
+			    	<li><a href="other/contact.jsp">Contact</a></li>
 			    	<div class="clear"></div>
      			</ul>
    	  </div>
@@ -71,18 +74,16 @@
 				<div class="categories">
 				  <ul>
 				  	<h3>Categories</h3>
-				      <li><a href="#">Mobile Phones</a></li>
-				      <li><a href="#">Desktop</a></li>
-				      <li><a href="#">Laptop</a></li>
-				      <li><a href="#">Accessories</a></li>
-				      <li><a href="#">Software</a></li>
-				       <li><a href="#">Sports &amp; Fitness</a></li>
-				       <li><a href="#">Footwear</a></li>
-				       <li><a href="#">Jewellery</a></li>
-				       <li><a href="#">Clothing</a></li>
-				       <li><a href="#">Home Decor &amp; Kitchen</a></li>
-				       <li><a href="#">Beauty &amp; Healthcare</a></li>
-				       <li><a href="#">Toys, Kids &amp; Babies</a></li>
+					  <li><a href="#">Electronics</a></li>
+					  <li><a href="#">Vehicle</a></li>
+					  <li><a href="#">Property</a></li>
+					  <li><a href="#">Jobs in Sri Lanka</a></li>
+					  <li><a href="#">Animals</a></li>
+					  <li><a href="#">Sports &amp; Fitness</a></li>
+					  <li><a href="#">Clothing</a></li>
+					  <li><a href="#">Home Decor &amp; Kitchen</a></li>
+					  <li><a href="#">Beauty &amp; Healthcare</a></li>
+					  <li><a href="#">Toys, Kids &amp; Babies</a></li>
 				  </ul>
 				</div>					
 	  	     </div>
@@ -92,7 +93,7 @@
 			                    <div id="mover">
 			                    	<div id="slide-1" class="slide">			                    
 									 <div class="slider-img">
-									     <a href="other/preview.html"><img src="images/slide-1-image.png" alt="learn more" /></a>
+									     <a href="other/preview.jsp"><img src="images/slide-1-image.png" alt="learn more" /></a>
 									  </div>
 						             	<div class="slider-text">
 		                                 <h1>Clearance<br><span>SALE</span></h1>
@@ -100,7 +101,7 @@
 									   <div class="features_list">
 									   	<h4>Get to Know More About Our Memorable Services Lorem Ipsum is simply dummy text</h4>							               
 							            </div>
-							             <a href="other/preview.html" class="button">Shop Now</a>
+							             <a href="other/preview.jsp" class="button">Shop Now</a>
 					                   </div>			               
 									  <div class="clear"></div>				
 				                  </div>	
@@ -111,16 +112,16 @@
 									   <div class="features_list">
 									   	<h4>Get to Know More About Our Memorable Services</h4>							               
 							            </div>
-							             <a href="other/preview.html" class="button">Shop Now</a>
+							             <a href="other/preview.jsp" class="button">Shop Now</a>
 					                   </div>		
 						             	 <div class="slider-img">
-									     <a href="other/preview.html"><img src="images/slide-3-image.jpg" alt="learn more" /></a>
+									     <a href="other/preview.jsp"><img src="images/slide-3-image.jpg" alt="learn more" /></a>
 									  </div>						             					                 
 									  <div class="clear"></div>				
 				                  </div>
 				                  <div class="slide">						             	
 					                  <div class="slider-img">
-									     <a href="other/preview.html"><img src="images/slide-2-image.jpg" alt="learn more" /></a>
+									     <a href="other/preview.jsp"><img src="images/slide-2-image.jpg" alt="learn more" /></a>
 									  </div>
 									  <div class="slider-text">
 		                                 <h1>Clearance<br><span>SALE</span></h1>
@@ -128,7 +129,7 @@
 									   <div class="features_list">
 									   	<h4>Get to Know More About Our Memorable Services Lorem Ipsum is simply dummy text</h4>							               
 							            </div>
-							             <a href="other/preview.html" class="button">Shop Now</a>
+							             <a href="other/preview.jsp" class="button">Shop Now</a>
 					                   </div>	
 									  <div class="clear"></div>				
 				                  </div>												
@@ -146,7 +147,7 @@
     <div class="content">
     	<div class="content_top">
     		<div class="heading">
-    		<h3>New ADVERtisement</h3>
+    		<h3>New Advertisement</h3>
     		</div>
     		<div class="see">
     			<p><a href="#">See all Ads</a></p>
@@ -155,55 +156,55 @@
     	</div>
 	      <div class="section group">
 				<div class="grid_1_of_4 images_1_of_4">
-					 <a href="other/preview.html"><img src="images/feature-pic1.jpg" alt="" /></a>
+					 <a href="other/preview.jsp"><img src="images/feature-pic1.jpg" alt="" /></a>
 					 <h2>Lorem Ipsum is simply </h2>
 					<div class="price-details">
 				       <div class="price-number">
 							<p><span class="rupees">Rs.15000.00&nbsp;</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="other/preview.html">View more&nbsp;</a></h4>
+									<h4><a href="other/preview.jsp">View more&nbsp;</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 					 
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="other/preview.html"><img src="images/feature-pic2.jpg" alt="" /></a>
+					<a href="other/preview.jsp"><img src="images/feature-pic2.jpg" alt="" /></a>
 					 <h2>Lorem Ipsum is simply </h2>
 					<div class="price-details">
 				       <div class="price-number">
 							<p><span class="rupees">Rs.10000.00&nbsp;</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="other/preview.html">View more &nbsp;</a></h4>
+									<h4><a href="other/preview.jsp">View more &nbsp;</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 				    
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="other/preview.html"><img src="images/feature-pic3.jpg" alt="" /></a>
+					<a href="other/preview.jsp"><img src="images/feature-pic3.jpg" alt="" /></a>
 					 <h2>Lorem Ipsum is simply </h2>
 					 <div class="price-details">
 				       <div class="price-number">
 							<p><span class="rupees">RS.30000.00&nbsp;</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="other/preview.html">View more &nbsp;</a></h4>
+									<h4><a href="other/preview.jsp">View more &nbsp;</a></h4>
 				       </div>
 							 <div class="clear"></div>
 					</div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="other/preview.html"><img src="images/feature-pic4.jpg" alt="" /></a>
+					<a href="other/preview.jsp"><img src="images/feature-pic4.jpg" alt="" /></a>
 					 <h2>Lorem Ipsum is simply </h2>
 					<div class="price-details">
 				       <div class="price-number">
 							<p><span class="rupees">Rs.45000.00&nbsp;</span></p>
 				      </div>
 					       		<div class="add-cart">								
-									<h4><a href="other/preview.html">View more &nbsp;</a></h4>
+									<h4><a href="other/preview.jsp">View more &nbsp;</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>				     
@@ -220,53 +221,53 @@
     	</div>
 			<div class="section group">
 				<div class="grid_1_of_4 images_1_of_4">
-					 <a href="other/preview.html"><img src="images/new-pic1.jpg" alt="" /></a>
+					 <a href="other/preview.jsp"><img src="images/new-pic1.jpg" alt="" /></a>
 					 <h2>Lorem Ipsum is simply </h2>
 					<div class="price-details">
 				       <div class="price-number">
 							<p><span class="rupees">Rs.45000.00&nbsp;</span></p>
 				      </div>
 					       		<div class="add-cart">								
-									<h4><a href="other/preview.html">View more &nbsp;</a></h4>
+									<h4><a href="other/preview.jsp">View more &nbsp;</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="other/preview.html"><img src="images/new-pic2.jpg" alt="" /></a>
+					<a href="other/preview.jsp"><img src="images/new-pic2.jpg" alt="" /></a>
 					 <h2>Lorem Ipsum is simply </h2>
 					 <div class="price-details">
 				       <div class="price-number">
 							<p><span class="rupees">Rs.60000.00&nbsp;</span></p>
 				       </div>
 					       		<div class="add-cart">								
-									<h4><a href="other/preview.html">View more &nbsp;</a></h4>
+									<h4><a href="other/preview.jsp">View more &nbsp;</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="other/preview.html"><img src="images/new-pic4.jpg" alt="" /></a>
+					<a href="other/preview.jsp"><img src="images/new-pic4.jpg" alt="" /></a>
 					 <h2>Lorem Ipsum is simply </h2>
 					<div class="price-details">
 				       <div class="price-number">
 							<p><span class="rupees">Rs.80000.00&nbsp;</span></p>
 				      </div>
 					       		<div class="add-cart">								
-									<h4><a href="other/preview.html">View more &nbsp;</a></h4>
+									<h4><a href="other/preview.jsp">View more &nbsp;</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-				 <a href="other/preview.html"><img src="images/new-pic3.jpg" alt="" /></a>
+				 <a href="other/preview.jsp"><img src="images/new-pic3.jpg" alt="" /></a>
 					 <h2>Lorem Ipsum is simply </h2>					 
 					 <div class="price-details">
 				       <div class="price-number">
 							<p><span class="rupees">Rs.60000.00&nbsp;</span></p>
 				       </div>
 					       		<div class="add-cart">								
-									<h4><a href="other/preview.html">View more &nbsp;</a></h4>
+									<h4><a href="other/preview.jsp">View more &nbsp;</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -281,31 +282,31 @@
 				<div class="col_1_of_4 span_1_of_4">
 						<h4>Information</h4>
 						<ul>
-						<li><a href="other/about.html">About Us</a></li>
-						<li><a href="other/contact.html">Customer Service</a></li>
+						<li><a href="other/about.jsp">About Us</a></li>
+						<li><a href="other/contact.jsp">Customer Service</a></li>
 						<li><a href="#">Advanced Search</a></li>
-						<li><a href="other/delivery.html">Orders and Returns</a></li>
-						<li><a href="other/contact.html">Contact Us</a></li>
+						<li><a href="other/delivery.jsp">Orders and Returns</a></li>
+						<li><a href="other/contact.jsp">Contact Us</a></li>
 						</ul>
 					</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>ABout us</h4>
 						<ul>
-						<li><a href="other/about.html">About Us</a></li>
-						<li><a href="other/contact.html">Customer Service</a></li>
+						<li><a href="other/about.jsp">About Us</a></li>
+						<li><a href="other/contact.jsp">Customer Service</a></li>
 						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="other/contact.html">Site Map</a></li>
+						<li><a href="other/contact.jsp">Site Map</a></li>
 						<li><a href="#">Search Terms</a></li>
 				  </ul>
 		   </div>
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>My account</h4>
 						<ul>
-							<li><a href="other/contact.html">Sign In</a></li>
+							<li><a href="other/contact.jsp">Sign In</a></li>
 							<li><a href="home.jsp">View Cart</a></li>
 							<li><a href="#">My Wishlist</a></li>
 							<li><a href="#">Track My Order</a></li>
-							<li><a href="other/contact.html">Help</a></li>
+							<li><a href="other/contact.jsp">Help</a></li>
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
@@ -350,7 +351,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-	   aria-hidden="true">
+	   aria-hidden="true">+-
 	  <div class="modal-dialog" role="document">
 		  <div class="modal-content">
 			  <div class="modal-header text-center">

@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.io.PrintWriter" %><%--
   Created by IntelliJ IDEA.
   User: Shehan
   Date: 8/22/2020
@@ -29,14 +29,36 @@ font-size: 30px;
     HttpSession httpSession =request.getSession();
     Cookie[] cookies=request.getCookies();
 
+
     for(Cookie cookie:cookies){
         if(cookie.getName().equals("Name")){
              name = cookie.getValue();
         }
+
     }
 %>
 
-  <h1 style="color: red" class="b">Welcome <%=name%></h1><br><br>
+  <h1 style="color: red" class="b"> <%
+      if(name==null){%>
+      <h1 style="color: red" class="b">Please Log in to your account</h1>
+<%
+}
+else{%>
+      <h1 style="color: red" class="b">Welcome <%=name%></h1>
+    <%  }%>
+
+
+
+
+
+
+
+
+
+
+
+
+  </h1><br><br>
 <button type="submit" class="Button">Post Your Ads</button>
 
 
