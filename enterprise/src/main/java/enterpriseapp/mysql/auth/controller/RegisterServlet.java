@@ -57,9 +57,15 @@ public class RegisterServlet extends HttpServlet {
 
 
             try {
+
                 if (err.length() == 0) {
                     HttpSession session = request.getSession();
                     session.setAttribute("Email",Email);
+                    session.setAttribute("Name",Name);
+                    Cookie name = new Cookie("Name", Name);
+                    response.addCookie(name);
+                    name.setMaxAge(60*60);
+
 
                     employeeDao.registerEmployee(user);
                     userDAO.login(Email, Password);
