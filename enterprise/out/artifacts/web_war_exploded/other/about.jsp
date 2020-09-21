@@ -39,7 +39,6 @@
 	     		<ul>
 			    	<li><a href="../home.jsp">Home</a></li>
 			    	<li class="active"><a href="about.jsp">About</a></li>
-			    	
 			    	<li><a href="news.jsp">News</a></li>
 			    	<li><a href="contact.jsp">Contact</a></li>
 			    	<div class="clear"></div>

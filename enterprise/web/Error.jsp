@@ -43,7 +43,7 @@
     <h1 style="color: red" class="b"><%=err%></h1>
 
 <div class="modal-footer d-flex justify-content-center">
-    <button class="btn btn-danger" onclick="location.href='home.jsp';">Go To HomePage</button>
+    <button class="btn btn-danger" onclick="location.href='home.html';">Go To HomePage</button>
 
 
 

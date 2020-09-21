@@ -16,19 +16,14 @@
 				 <p><span>Need help?</span> call us <span class="number">+94778342720&nbsp;</span></span></p>
 			</div>
 			<div class="account_desc">
-
-
 				<ul class="navbar-nav mr-auto" id="menu">
-
 					<li class="nav-item">
 						<a class="nav-link waves-effect" href="#"  data-toggle="modal" data-target="#modalLoginForm">Login</a>
 					</li>
-
 					<li class="nav-item">
 						<a class="nav-link waves-effect" href="#"
 						   data-toggle="modal" data-target="#modalRegisterForm">SignUp</a>
 					</li>
-
 					<li class="nav-item">
 						<a class="nav-link waves-effect" href="account.jsp"  >
 							My Account
@@ -37,8 +32,8 @@
 				</ul>
 
 			</div>
-
 			</div>
+
 		<div class="header_top">
 			<div class="row">
 				<div class="column" ><div class="logo">
@@ -47,10 +42,7 @@
 				<div class="column" align="right"><button type="submit" class="Button">Post Your Ads</button></div>
 			</div>
 
-
-
-	 <div class="clear"></div>
-  </div>
+</div>
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
@@ -61,14 +53,16 @@
 			    	<li><a href="other/contact.jsp">Contact</a></li>
 			    	<div class="clear"></div>
      			</ul>
-   	  </div>
-<!--	     	<div class="search_box">-->
-<!--	     		<form>-->
-<!--	     			<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">-->
-<!--	     		</form>-->
-<!--	     	</div>-->
-	     	<div class="clear"></div>
-      </div>	     
+			</div>
+		<div class="search_box">
+			<form>
+				<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
+			</form>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
 	<div class="header_slide">
 			<div class="header_bottom_left">				
 				<div class="categories">

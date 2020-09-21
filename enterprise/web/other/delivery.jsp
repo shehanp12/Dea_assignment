@@ -38,7 +38,7 @@
 		</div>
 		<div class="header_top">
 			<div class="logo">
-				<a href="../home.jsp"><img src="../images/logo.png" alt="" /></a>
+				<a href="../home.html"><img src="../images/logo.png" alt="" /></a>
 			</div>
 			<div class="column" align="right"><button type="submit" class="Button">Post Your Ads</button></div>
 			  
@@ -47,7 +47,7 @@
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-			    	<li><a href="../home.jsp">Home</a></li>
+			    	<li><a href="../home.html">Home</a></li>
 			    	<li><a href="about.jsp">About</a></li>
 			    	
 			    	<li><a href="news.jsp">News</a></li>

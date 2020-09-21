@@ -76,7 +76,7 @@ public class RegisterServlet extends HttpServlet {
 
 
                     if(name == null){
-                        response.sendRedirect("home.jsp");
+                        response.sendRedirect("home.html");
                     }else{
                         response.sendRedirect("account.jsp");
                     }
