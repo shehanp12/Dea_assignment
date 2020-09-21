@@ -49,27 +49,11 @@ else{%>
 
 
 
-
-
-
-
-
-
-
-
-
   </h1><br><br>
 <button type="submit" class="Button">Post Your Ads</button>
-
-
-
-
-
-
-
-
-
-
+<form action="<%= request.getContextPath() %>/logout" method="post" id="account-logout" >
+<button class="btn btn-danger">Logout</button>
+</form>
 
 
 
