@@ -23,7 +23,7 @@ public class LogoutServlet extends HttpServlet {
       name.setMaxAge(0);
       response.addCookie(name);
 
-        response.sendRedirect("home.html");
+        response.sendRedirect("home.jsp");
 
 
     }

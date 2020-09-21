@@ -54,7 +54,7 @@
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-			    	<li class="active"><a href="home.html">Home</a></li>
+			    	<li class="active"><a href="home.jsp">Home</a></li>
 			    	<li><a href="other/about.jsp">About</a></li>
 			    	<li><a href="other/delivery.jsp">Delivery</a></li>
 			    	<li><a href="other/news.jsp">News</a></li>
@@ -305,7 +305,7 @@
 					<h4>My account</h4>
 						<ul>
 							<li><a href="other/contact.jsp">Sign In</a></li>
-							<li><a href="home.html">View Cart</a></li>
+							<li><a href="home.jsp">View Cart</a></li>
 							<li><a href="#">My Wishlist</a></li>
 							<li><a href="#">Track My Order</a></li>
 							<li><a href="other/contact.jsp">Help</a></li>
