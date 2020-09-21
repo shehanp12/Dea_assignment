@@ -89,19 +89,10 @@
 					<!--<h4>Posted on Aug 1st, 2013 by <span><a href="#">Finibus Bonorum</a></span></h4>-->
 					<p>So, You Need to Purchase A Automotive.</p>
 					<p>Possibly at this time’s the day. You have lastly reached that time. Possibly it is a difficulty along with your present trip. Possibly there is a new addition (driver/member) to your loved ones. Or perhaps it is simply time for a change. No matter your motive, your about to enterprise right into a course of that most individuals examine to dental work or a colonoscopy! However does it actually should be that unhealthy?</p>
-					<p>As a long-term member of the second most hated group of pros in America, ranked behind legal professionals in most casual surveys, the automotive salesman is probably essentially the most untrustworthy, despised particular person in America at this time! We’re all lifelong members of the Villains, Thieves and Scoundrels Union, Native 3 (because of these of you who obtained the Rocky & Bullwinkle reference). We’d misinform our moms for a sale, and nothing we are saying or do might be taken at face worth. We’ll lie, cheat and steal to make a fee, so that you finest depart your pockets at house and put together for warfare. <a href="#" title="more">[....]</a></p>
+					<p>As a long-term member of the second most hated group of pros in America, ranked behind legal professionals in most casual surveys, the automotive salesman is probably essentially the most untrustworthy, despised particular person in America at this time! We’re all lifelong members of the Villains, Thieves and Scoundrels Union, Native 3 (because of these of you who obtained the Rocky & Bullwinkle reference). We’d misinform our moms for a sale, and nothing we are saying or do might be taken at face worth. We’ll lie, cheat and steal to make a fee, so that you finest depart your pockets at house and put together for warfare. </p>
 			   </div>
 		   </div>
-		   <div class="content-pagenation">
-						<li><a href="#">Frist</a></li>
-						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><span>....</span></li>
-						<li><a href="#">Last</a></li>
-						<div class="clear"> </div>
-					</div>	
-         </div> 
+
     </div>
  </div>
    <div class="footer">

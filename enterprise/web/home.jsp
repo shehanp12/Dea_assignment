@@ -23,23 +23,31 @@
 			<div class="call">
 				 <p><span>Need help?</span> call us <span class="number">+94778342720&nbsp;</span></span></p>
 			</div>
-			<div class="account_desc">
-				<ul class="navbar-nav mr-auto" id="menu">
-					<li class="nav-item">
-						<a class="nav-link waves-effect" href="#"  data-toggle="modal" data-target="#modalLoginForm">Login</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link waves-effect" href="#"
-						   data-toggle="modal" data-target="#modalRegisterForm">SignUp</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link waves-effect" href="account.jsp"  >
-							My Account
-						</a>
-					</li>
-				</ul>
 
+			<div class="account_desc">
+				<ul>
+					<li><a href="#" data-toggle="modal" data-target="#modalRegisterForm">Register</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#modalLoginForm">Login</a></li>
+					<li><a href="account.jsp">My Account</a></li>
+				</ul>
 			</div>
+<%--			<div class="account_desc">--%>
+<%--				<ul class="navbar-nav mr-auto" id="menu">--%>
+<%--					<li class="nav-item">--%>
+<%--						<a class="nav-link waves-effect" href="#"  data-toggle="modal" data-target="#modalLoginForm">Login</a>--%>
+<%--					</li>--%>
+<%--					<li class="nav-item">--%>
+<%--						<a class="nav-link waves-effect" href="#"--%>
+<%--						   data-toggle="modal" data-target="#modalRegisterForm">SignUp</a>--%>
+<%--					</li>--%>
+<%--					<li class="nav-item">--%>
+<%--						<a class="nav-link waves-effect" href="account.jsp"  >--%>
+<%--							My Account--%>
+<%--						</a>--%>
+<%--					</li>--%>
+<%--				</ul>--%>
+
+<%--			</div>--%>
 			</div>
 
 		<div class="header_top">
