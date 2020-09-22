@@ -10,6 +10,7 @@
 </head>
 <body>
 
+
 <%@page import="newpackage.mongoDb"%>
 <%@ page import="com.mongodb.client.MongoCursor" %>
 <%@ page import="com.mongodb.MongoClientURI" %>
@@ -18,10 +19,11 @@
 <%@ page import="org.bson.Document" %>
 <%@ page import="com.mongodb.client.MongoCollection" %>
 <%@ page import="newpackage.userController" %>
-
+<%@ page import="java.util.ArrayList" %>
 <%
 	try {
-		User user1 = new User();
+
+		ArrayList<Document> al = new ArrayList<Document>();
 		MongoClientURI uri = new MongoClientURI(
 				"mongodb+srv://Admin:admin@cluster0-eedvx.mongodb.net/testDataBase?retryWrites=true&w=majority");
 
@@ -39,8 +41,13 @@
 
 		while (cursor.hasNext()) {
 			System.out.println(cursor.next().toJson());
+			al.add(cursor.next());
+%>
+
+<%=cursor.next().get("title")%>
 <%
 %>
+
 <div class="wrap">
 	<div class="header">
 		<div class="headertop_desc">
@@ -236,7 +243,7 @@
 							<div class="clear"></div>
 						</div>
 					</div>
-				
+
 				</div>
 				<div class="content_bottom">
 					<div class="heading">
@@ -248,143 +255,143 @@
 					<div class="clear"></div>
 				</div>
 
-					<div class="grid_1_of_4 images_1_of_4">
-						<a href="other/preview.html"><img src="images/new-pic3.jpg" alt="" /></a>
-						<h2><%=cursor.next().get("name") %> </h2>
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees"><%=cursor.next().get("title")%>&nbsp;</span></p>
-							</div>
-							<div class="add-cart">
-								<h4><a href="">View more &nbsp;</a></h4>
-							</div>
-							<div class="clear"></div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="other/preview.html"><img src="images/new-pic3.jpg" alt="" /></a>
+					<h2><%=cursor.next().get("name") %> </h2>
+					<div class="price-details">
+						<div class="price-number">
+							<p><span class="rupees">&nbsp;</span></p>
 						</div>
+						<div class="add-cart">
+							<h4><a href="">View more &nbsp;</a></h4>
+						</div>
+						<div class="clear"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="footer">
-		<div class="wrap">
-			<div class="section group">
-				<div class="col_1_of_4 span_1_of_4">
-					<h4>Information</h4>
+</div>
+<div class="footer">
+	<div class="wrap">
+		<div class="section group">
+			<div class="col_1_of_4 span_1_of_4">
+				<h4>Information</h4>
+				<ul>
+					<li><a href="other/about.html">About Us</a></li>
+					<li><a href="other/contact.html">Customer Service</a></li>
+					<li><a href="#">Advanced Search</a></li>
+					<li><a href="other/delivery.html">Orders and Returns</a></li>
+					<li><a href="other/contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="col_1_of_4 span_1_of_4">
+				<h4>ABout us</h4>
+				<ul>
+					<li><a href="other/about.html">About Us</a></li>
+					<li><a href="other/contact.html">Customer Service</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="other/contact.html">Site Map</a></li>
+					<li><a href="#">Search Terms</a></li>
+				</ul>
+			</div>
+			<div class="col_1_of_4 span_1_of_4">
+				<h4>My account</h4>
+				<ul>
+					<li><a href="other/contact.html">Sign In</a></li>
+					<li><a href="home.jsp">View Cart</a></li>
+					<li><a href="#">My Wishlist</a></li>
+					<li><a href="#">Track My Order</a></li>
+					<li><a href="other/contact.html">Help</a></li>
+				</ul>
+			</div>
+			<div class="col_1_of_4 span_1_of_4">
+				<h4>Contact</h4>
+				<ul>
+					<li><span>+91-123-456789</span></li>
+					<li><span>+00-123-000000</span></li>
+				</ul>
+				<div class="social-icons">
+					<h4>Follow Us</h4>
 					<ul>
-						<li><a href="other/about.html">About Us</a></li>
-						<li><a href="other/contact.html">Customer Service</a></li>
-						<li><a href="#">Advanced Search</a></li>
-						<li><a href="other/delivery.html">Orders and Returns</a></li>
-						<li><a href="other/contact.html">Contact Us</a></li>
+						<li><a href="#" target="_blank"><img src="images/facebook.png" alt="" /></a></li>
+						<li><a href="#" target="_blank"><img src="images/twitter.png" alt="" /></a></li>
+						<li><a href="#" target="_blank"><img src="images/skype.png" alt="" /> </a></li>
+						<li><a href="#" target="_blank"> <img src="images/dribbble.png" alt="" /></a></li>
+						<li><a href="#" target="_blank"> <img src="images/linkedin.png" alt="" /></a></li>
+						<div class="clear"></div>
 					</ul>
 				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<h4>ABout us</h4>
-					<ul>
-						<li><a href="other/about.html">About Us</a></li>
-						<li><a href="other/contact.html">Customer Service</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="other/contact.html">Site Map</a></li>
-						<li><a href="#">Search Terms</a></li>
-					</ul>
-				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<h4>My account</h4>
-					<ul>
-						<li><a href="other/contact.html">Sign In</a></li>
-						<li><a href="home.jsp">View Cart</a></li>
-						<li><a href="#">My Wishlist</a></li>
-						<li><a href="#">Track My Order</a></li>
-						<li><a href="other/contact.html">Help</a></li>
-					</ul>
-				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<h4>Contact</h4>
-					<ul>
-						<li><span>+91-123-456789</span></li>
-						<li><span>+00-123-000000</span></li>
-					</ul>
-					<div class="social-icons">
-						<h4>Follow Us</h4>
-						<ul>
-							<li><a href="#" target="_blank"><img src="images/facebook.png" alt="" /></a></li>
-							<li><a href="#" target="_blank"><img src="images/twitter.png" alt="" /></a></li>
-							<li><a href="#" target="_blank"><img src="images/skype.png" alt="" /> </a></li>
-							<li><a href="#" target="_blank"> <img src="images/dribbble.png" alt="" /></a></li>
-							<li><a href="#" target="_blank"> <img src="images/linkedin.png" alt="" /></a></li>
-							<div class="clear"></div>
-						</ul>
+			</div>
+		</div>
+	</div>
+	<div class="copy_right">
+		<p>&copy; 2020 home_shoppe. All rights reserved | Design by Codeboys&nbsp; <a href="">&nbsp;</a></p>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$().UItoTop({ easingType: 'easeOutQuart' });
+
+	});
+</script>
+<a href="#" id="toTop"><span id="toTopHover"> </span></a>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/startstop-slider.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+	 aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header text-center">
+				<h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+
+			<!-- signup -->
+
+			<div class="modal-body mx-3">
+				<form action="<%= request.getContextPath() %>/register" method="post" id="signup-form" >
+					<div class="input-field">
+						<i class="fas fa-user prefix grey-text"></i>
+						<label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+						<input type="text" id="orangeForm-name" name="Name" class="form-control validate">
+
 					</div>
-				</div>
+					<div class="input-field">
+						<i class="fas fa-envelope prefix grey-text"></i>
+						<label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+						<input type="email" id="orangeForm-email" name="Email" class="form-control validate">
+					</div>
+
+					<div class="input-field">
+						<i class="fas fa-lock prefix grey-text"></i>
+						<label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+						<input type="password" id="orangeForm-pass" name="Password" class="form-control validate" >
+					</div>
+					<div class="input-field">
+						<i class="fas fa-lock prefix grey-text"></i>
+						<label data-error="wrong" data-success="right" for="orangeForm-pass">Confirm Your Password</label>
+						<input type="password" id="confirm" name="confirm-password" class="form-control validate" >
+					</div>
+
 			</div>
-		</div>
-		<div class="copy_right">
-			<p>&copy; 2020 home_shoppe. All rights reserved | Design by Codeboys&nbsp; <a href="">&nbsp;</a></p>
+			<div class="modal-footer d-flex justify-content-center">
+				<button class="btn btn-danger">Sign up</button>
+			</div>
+			</form>
 		</div>
 	</div>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$().UItoTop({ easingType: 'easeOutQuart' });
-
-		});
-	</script>
-	<a href="#" id="toTop"><span id="toTopHover"> </span></a>
-
-	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript" src="js/startstop-slider.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-	<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-		 aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header text-center">
-					<h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-label="close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-
-				<!-- signup -->
-
-				<div class="modal-body mx-3">
-					<form action="<%= request.getContextPath() %>/register" method="post" id="signup-form" >
-						<div class="input-field">
-							<i class="fas fa-user prefix grey-text"></i>
-							<label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
-							<input type="text" id="orangeForm-name" name="Name" class="form-control validate">
-
-						</div>
-						<div class="input-field">
-							<i class="fas fa-envelope prefix grey-text"></i>
-							<label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
-							<input type="email" id="orangeForm-email" name="Email" class="form-control validate">
-						</div>
-
-						<div class="input-field">
-							<i class="fas fa-lock prefix grey-text"></i>
-							<label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
-							<input type="password" id="orangeForm-pass" name="Password" class="form-control validate" >
-						</div>
-						<div class="input-field">
-							<i class="fas fa-lock prefix grey-text"></i>
-							<label data-error="wrong" data-success="right" for="orangeForm-pass">Confirm Your Password</label>
-							<input type="password" id="confirm" name="confirm-password" class="form-control validate" >
-						</div>
-
-				</div>
-				<div class="modal-footer d-flex justify-content-center">
-					<button class="btn btn-danger">Sign up</button>
-				</div>
-				</form>
-			</div>
-		</div>
-	</div>
+</div>
 </div>
 
 <!--End of signup-->
@@ -446,6 +453,7 @@
 </div>
 </div>
 </div>
+
 
 
 
