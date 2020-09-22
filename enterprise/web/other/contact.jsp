@@ -70,19 +70,19 @@
 					    <form>
 					    	<div>
 						    	<span><label>Name</label></span>
-						    	<span><input type="text" class="textbox" ></span>
+						    	<span><input type="text" class="textbox" name="name" ></span>
 						    </div>
 						    <div>
 						    	<span><label>E-mail</label></span>
-						    	<span><input type="text" class="textbox"></span>
+						    	<span><input type="text" class="textbox" name="email"></span>
 						    </div>
 						    <div>
 						     	<span><label>Company Name</label></span>
-						    	<span><input type="text" class="textbox"></span>
+						    	<span><input type="text" class="textbox" name="company_name"></span>
 						    </div>
 						    <div>
 						    	<span><label>Subject</label></span>
-						    	<span><textarea> </textarea></span>
+						    	<span><textarea name="subject"> </textarea></span>
 						    </div>
 						   <div>
 						   		<span><input type="submit" value="Submit"  class="myButton"></span>
