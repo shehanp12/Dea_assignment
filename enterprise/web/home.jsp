@@ -19,40 +19,24 @@
 <%@ page import="org.bson.Document" %>
 <%@ page import="com.mongodb.client.MongoCollection" %>
 <%@ page import="newpackage.userController" %>
+
+
+<%@page import="newpackage.mongoDb"%>
+<%@ page import="com.mongodb.client.MongoCursor" %>
+<%@ page import="com.mongodb.MongoClientURI" %>
+<%@ page import="com.mongodb.MongoClient" %>
+<%@ page import="com.mongodb.client.MongoDatabase" %>
+<%@ page import="org.bson.Document" %>
+<%@ page import="com.mongodb.client.MongoCollection" %>
+<%@ page import="newpackage.userController" %>
 <%@ page import="java.util.ArrayList" %>
-<%
-	try {
 
-		ArrayList<Document> al = new ArrayList<Document>();
-		MongoClientURI uri = new MongoClientURI(
-				"mongodb+srv://Admin:admin@cluster0-eedvx.mongodb.net/testDataBase?retryWrites=true&w=majority");
-
-		MongoClient mongoClient = new MongoClient(uri);
-		MongoDatabase database = mongoClient.getDatabase("testDataBase");
-
-		// Retrieving a collection
-		MongoCollection<Document> collection = database.getCollection("testCollection");
-
-
-		int i = 1;
-		// Getting the iterator
-
-		MongoCursor<Document> cursor = collection.find().iterator();
-
-		while (cursor.hasNext()) {
-			System.out.println(cursor.next().toJson());
-			al.add(cursor.next());
-%>
-
-<%=cursor.next().get("title")%>
-<%
-%>
 
 <div class="wrap">
 	<div class="header">
 		<div class="headertop_desc">
 			<div class="call">
-				<p><span>Need help?</span> call us <span class="number">+94778342720&nbsp;</span></span></p>
+				<p><span>Need help?</span> call us <span class="number">+94778342720&nbsp;</span></p>
 			</div>
 			<div class="account_desc">
 
@@ -77,15 +61,14 @@
 
 			</div>
 
-			<<<<<<< Updated upstream
-			=======
+
 			<div class="header_top">
 				<div class="row">
 					<div class="column" ><div class="logo">
 						<a href="index.html"><img src="images/logo.png" alt="" /></a>
 					</div></div>
 					<div class="column" align="right"><button type="submit" class="Button" onclick="location.href='other/post_ad.jsp';">Post Your Ads</button></div>
-					>>>>>>> Stashed changes
+
 				</div>
 
 
@@ -202,12 +185,38 @@
 					<div class="clear"></div>
 				</div>
 				<div class="section group">
+					<%
+						try {
+
+							ArrayList<Document> al = new ArrayList<Document>();
+							MongoClientURI uri = new MongoClientURI(
+									"mongodb+srv://Admin:admin@cluster0-eedvx.mongodb.net/testDataBase?retryWrites=true&w=majority");
+
+							MongoClient mongoClient = new MongoClient(uri);
+							MongoDatabase database = mongoClient.getDatabase("testDataBase");
+
+							// Retrieving a collection
+							MongoCollection<Document> collection = database.getCollection("testCollection");
+
+
+							int i = 0;
+							// Getting the iterator
+
+							MongoCursor<Document> cursor = collection.find().iterator();
+
+							while (cursor.hasNext()) {
+								System.out.println(cursor.next().toJson());
+								al.add(cursor.next());
+					%>
+
+					<%
+					%>
 					<div class="grid_1_of_4 images_1_of_4">
 						<a href="other/preview.html"><img src="images/feature-pic1.jpg" alt="" /></a>
-						<h2>Lorem Ipsum is simply </h2>
+						<h2><%=al.get(i).get("name")%></h2>
 						<div class="price-details">
 							<div class="price-number">
-								<p><span class="rupees">Rs.15000.00&nbsp;</span></p>
+								<p><span class="rupees"><%=al.get(i).get("name")%></span></p>
 							</div>
 							<div class="add-cart">
 								<h4><a href="other/preview.html">View more&nbsp;</a></h4>
@@ -216,20 +225,34 @@
 						</div>
 
 					</div>
-					<div class="grid_1_of_4 images_1_of_4">
-						<a href="other/preview.html"><img src="images/feature-pic2.jpg" alt="" /></a>
-						<h2>Lorem Ipsum is simply </h2>
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">Rs.10000.00&nbsp;</span></p>
-							</div>
-							<div class="add-cart">
-								<h4><a href="other/preview.html">View more &nbsp;</a></h4>
-							</div>
-							<div class="clear"></div>
-						</div>
 
-					</div>
+					<%
+								i++;
+							}
+
+
+						}catch (Exception e){
+							e.printStackTrace();
+						}
+					%>
+
+
+					<%--                         <div class="grid_1_of_4 images_1_of_4">--%>
+					<%--                        <a href="other/preview.html"><img src="" alt="" /></a>--%>
+					<%--                        <h2><%=al.get(i).get("name")%></h2>--%>
+					<%--                    <div class="price-details">--%>
+					<%--                        <div class="price-number">--%>
+					<%--                            <p><span class="rupees"><%=al.get(i).get("name")%></span></p>--%>
+					<%--                        </div>--%>
+					<%--                        <div class="add-cart">--%>
+					<%--                            <h4><a href="other/preview.html">View more&nbsp;</a></h4>--%>
+					<%--                        </div>--%>
+					<%--                        <div class="clear"></div>--%>
+					<%--                    </div>--%>
+
+					<%--                </div>--%>
+					<%--                   --%>
+
 					<div class="grid_1_of_4 images_1_of_4">
 						<a href="other/preview.html"><img src="images/feature-pic3.jpg" alt="" /></a>
 						<h2>Lorem Ipsum is simply </h2>
@@ -257,7 +280,7 @@
 
 				<div class="grid_1_of_4 images_1_of_4">
 					<a href="other/preview.html"><img src="images/new-pic3.jpg" alt="" /></a>
-					<h2><%=cursor.next().get("name") %> </h2>
+					<h2></h2>
 					<div class="price-details">
 						<div class="price-number">
 							<p><span class="rupees">&nbsp;</span></p>
@@ -459,15 +482,6 @@
 
 
 
-
-<%
-		}
-
-
-	}catch (Exception e){
-		e.printStackTrace();
-	}
-%>
 
 </body>
 </html>
