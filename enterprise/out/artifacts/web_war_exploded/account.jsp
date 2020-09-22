@@ -29,13 +29,7 @@
                 <p><span>Need help?</span> call us <span class="number">+94778342720&nbsp;</span></span></p>
             </div>
 
-            <div class="account_desc">
-                <ul>
-                    <li><a href="#" data-toggle="modal" data-target="#modalRegisterForm">Register</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#modalLoginForm">Login</a></li>
-                    <li><a href="account.jsp">My Account</a></li>
-                </ul>
-            </div>
+
 
     </div>
 </div>
