@@ -38,6 +38,15 @@
 
 			</div>
 
+<<<<<<< Updated upstream
+=======
+		<div class="header_top">
+			<div class="row">
+				<div class="column" ><div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="" /></a>
+				</div></div>
+				<div class="column" align="right"><button type="submit" class="Button" onclick="location.href='other/post_ad.jsp';">Post Your Ads</button></div>
+>>>>>>> Stashed changes
 			</div>
 
 
