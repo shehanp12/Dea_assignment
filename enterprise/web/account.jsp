@@ -60,6 +60,7 @@ font-size: 30px;
 
     }
 %>
+    <br><br>
 
   <h1 style="color: red" class="b"> <%
       if(name==null){%>
@@ -72,8 +73,47 @@ else{%>
 
 
 
+    <div class="header_top">
+        <div class="row">
+            <div class="column" >
+               <p class="aligncenter">
+                <img src="images/man.jpg" class="center" alt="" />
+            </p>
+            </div>
+        </div>
+    </div>
+
+<style>
+
+    .a{
+        position:center;
+        alignment: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+
+    }
+
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .aligncenter{
+        text-align: center;
+    }
+
+</style>
+
+        <br><br>
+
+
+
+
   </h1><br><br>
-<button type="submit" class="Button">Post Your Ads</button>
+
 <form action="<%= request.getContextPath() %>/logout" method="post" id="account-logout" >
 <button class="btn btn-danger">Logout</button>
 </form>

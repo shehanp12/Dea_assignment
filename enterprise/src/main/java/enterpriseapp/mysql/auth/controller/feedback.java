@@ -1,3 +1,5 @@
+package enterpriseapp.mysql.auth.controller;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,15 +22,16 @@ public class feedback extends HttpServlet {
         String subject = request.getParameter("subject");
 
         try {
-            Class.forName("org.mariadb.jdbc.Driver");
-            Connection c = DriverManager.getConnection("jdbc:mariadb://localhost:3306/test", "root", "root");
-            PreparedStatement ps = c.prepareStatement("select userName,pass from student where userName=? and pass=?");
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/enterpriseapp", "root", "root");
+            PreparedStatement ps = c.prepareStatement("INSERT INTO form (name,email,companyname,subject) VALUES(?,?,?,?)");
             ps.setString(1, name);
             ps.setString(2, email);
             ps.setString(3,company_name);
             ps.setString(4,subject);
 
             ResultSet rs = ps.executeQuery();
+            System.out.println(ps);
 
             while (rs.next()) {
                 response.sendRedirect("success.html");

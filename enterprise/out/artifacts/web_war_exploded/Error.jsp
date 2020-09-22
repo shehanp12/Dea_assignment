@@ -33,7 +33,7 @@
             <div class="header_top">
                 <div class="row">
                     <div class="column" ><div class="logo">
-                        <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                        <img src="images/logo.png" alt="" />
                     </div>
                     </div>
                 </div>
