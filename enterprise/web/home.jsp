@@ -1,11 +1,18 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: binur
+  Date: 9/23/2020
+  Time: 1:45 PM
+  To change this template use File | Settings | File Templates.
+--%>
 
 <!DOCTYPE HTML>
 <head>
-<title> | Home </title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-<link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+	<title> | Home </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
 
 </head>
 <body>
@@ -20,21 +27,19 @@
 <%@ page import="com.mongodb.client.MongoCollection" %>
 <%@ page import="newpackage.userController" %>
 
-<<<<<<< Updated upstream
-=======
-<%
-	try {
+<%--<%--%>
+<%--    try {--%>
 
-		MongoClientURI uri = new MongoClientURI(
-				"mongodb+srv://Admin:admin@cluster0-eedvx.mongodb.net/testDataBase?retryWrites=true&w=majority");
+<%--        MongoClientURI uri = new MongoClientURI(--%>
+<%--                "mongodb+srv://Admin:admin@cluster0-eedvx.mongodb.net/testDataBase?retryWrites=true&w=majority");--%>
 
-		MongoClient mongoClient = new MongoClient(uri);
-		MongoDatabase database = mongoClient.getDatabase("testDataBase");
+<%--        MongoClient mongoClient = new MongoClient(uri);--%>
+<%--        MongoDatabase database = mongoClient.getDatabase("testDataBase");--%>
 
-		// Retrieving a collection
-		MongoCollection<Document> collection = database.getCollection("testCollection");
+<%--        // Retrieving a collection--%>
+<%--        MongoCollection<Document> collection = database.getCollection("testCollection");--%>
 
->>>>>>> Stashed changes
+
 
 <%@page import="newpackage.mongoDb"%>
 <%@ page import="com.mongodb.client.MongoCursor" %>
@@ -220,18 +225,21 @@
 							MongoCursor<Document> cursor = collection.find().iterator();
 
 							while (cursor.hasNext()) {
-								System.out.println(cursor.next().toJson());
+
 								al.add(cursor.next());
+
+
 					%>
 
 					<%
 					%>
+
 					<div class="grid_1_of_4 images_1_of_4">
 						<a href="other/preview.html"><img src="images/feature-pic1.jpg" alt="" /></a>
-						<h2><%=al.get(i).get("name")%></h2>
+						<h2><%=al.get(i).get("title")%></h2>
 						<div class="price-details">
 							<div class="price-number">
-								<p><span class="rupees"><%=al.get(i).get("name")%></span></p>
+								<p><span class="rupees"><%=al.get(i).get("description")%></span></p>
 							</div>
 							<div class="add-cart">
 								<h4><a href="other/preview.html">View more&nbsp;</a></h4>
@@ -268,19 +276,19 @@
 					<%--                </div>--%>
 					<%--                   --%>
 
-					<div class="grid_1_of_4 images_1_of_4">
-						<a href="other/preview.html"><img src="images/feature-pic3.jpg" alt="" /></a>
-						<h2>Lorem Ipsum is simply </h2>
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">RS.30000.00&nbsp;</span></p>
-							</div>
-							<div class="add-cart">
-								<h4><a href="other/preview.html">View more &nbsp;</a></h4>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
+					<%--                    <div class="grid_1_of_4 images_1_of_4">--%>
+					<%--                        <a href="other/preview.html"><img src="images/feature-pic3.jpg" alt="" /></a>--%>
+					<%--                        <h2>Lorem Ipsum is simply </h2>--%>
+					<%--                        <div class="price-details">--%>
+					<%--                            <div class="price-number">--%>
+					<%--                                <p><span class="rupees">RS.30000.00&nbsp;</span></p>--%>
+					<%--                            </div>--%>
+					<%--                            <div class="add-cart">--%>
+					<%--                                <h4><a href="other/preview.html">View more &nbsp;</a></h4>--%>
+					<%--                            </div>--%>
+					<%--                            <div class="clear"></div>--%>
+					<%--                        </div>--%>
+					<%--                    </div>--%>
 
 				</div>
 				<div class="content_bottom">
@@ -422,14 +430,13 @@
 						<input type="password" id="confirm" name="confirm-password" class="form-control validate" >
 					</div>
 
+					<div class="modal-footer d-flex justify-content-center">
+						<button class="btn btn-danger">Sign up</button>
+					</div>
+				</form>
 			</div>
-			<div class="modal-footer d-flex justify-content-center">
-				<button class="btn btn-danger">Sign up</button>
-			</div>
-			</form>
 		</div>
 	</div>
-</div>
 </div>
 
 <!--End of signup-->
@@ -500,4 +507,3 @@
 
 </body>
 </html>
-
