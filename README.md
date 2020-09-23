@@ -15,6 +15,12 @@ SQL is the most popular language for adding, accessing and managing content in a
 
 Description of Project 
 
-"Home SHOPPE" website is a ecommerce site that display adds as request by buyers and show it to the web site visitors.The Registered users can post a add through our website and 
+"Home SHOPPE" website is a ecommerce site that display adds as request by buyers and show it to the web site visitors.The Registered users can post a add through our website and users can see and have a idea about the products and about categories.Users can either register the web site and they can login the site.If user want to logout the site they can logout in the my account.
+We use cookies to save the users and use sendREDIRECT METHOD to routing and also state managment of the site.
+
+The reason we use Mongodb over mysql is  when we implement the website practically we have to use lot of data in the advertisments. So manage a large database will be easier when we use mongodb rather than mysql.
+
+We have a admin panel to manage users and we used MVC architecture to add data to the database respectivley and we can delete update and create users in the admin.
+JSP css and bootstrap used for user interface designing.
 
 
