@@ -7,9 +7,9 @@ SQL is the most popular language for adding, accessing and managing content in a
 
 ## Project Members
 
-|Name | Student ID | Degree | Github UserName |
-|--------|-------------|-------------|-----------------|
+|Name     | Student ID    | Degree    | Github UserName |
+|--------------------|--------------------|--------------------|--------------------|
 |K.A.Shehan Prasanna|21017688|UGC BSc(Special) MIS |shehanp12 |
-|---------|------------|---------|------------|----------|
+|B.O.Jayathunga|21017519|UGC BSc(Special) MIS | Binura owin |
 
 
