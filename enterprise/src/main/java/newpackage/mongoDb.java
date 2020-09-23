@@ -50,13 +50,13 @@ public class mongoDb{
 //        collection.insertOne((Document) userController.toDBObject(user));
         // Sample document.
         Document emp1 = new Document();
-        emp1.put("mobile", u.getMobile());
-        emp1.put("sCategory",u.getCategory());
-        emp1.put("email",u.getEmail());
-        emp1.put("name", u.getName());
-        emp1.put("title",u.getTitle());
-        emp1.put("description", u.getDescription());
-        emp1.put("photo",u.getFile());
+        emp1.put("name", ad.getName());
+        emp1.put("phone", ad.getMobile());
+        emp1.put("email", ad.getEmail());
+        emp1.put("file", ad.getFile());
+        emp1.put("title", ad.getTitle());
+        emp1.put("description", ad.getDescription());
+        emp1.put("sCategory", ad.getCategory());
 
         collection.insertOne(emp1);
       //  DBObject doc = userController.toDBObject(user);

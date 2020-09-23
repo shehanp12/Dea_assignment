@@ -21,7 +21,7 @@
 <%
     try{
 
-     d   int i=mongoDb2.save(ad);
+     d   int i=mongoDb.save(ad);
         if(i>0){ response.sendRedirect("adduser-success.jsp");
         }else{
             response.sendRedirect("adduser-error.jsp");
