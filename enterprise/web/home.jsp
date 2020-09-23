@@ -105,7 +105,7 @@
 						<li class="active"><a href="home.jsp">Home</a></li>
 						<li><a href="other/about.html">About</a></li>
 						<li><a href="other/delivery.html">Delivery</a></li>
-						<li><a href="other/news.html">News</a></li>
+						<li><a href="news.jsp">News</a></li>
 						<li><a href="other/contact.html">Contact</a></li>
 						<div class="clear"></div>
 					</ul>

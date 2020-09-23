@@ -17,7 +17,7 @@
     <script type="text/javascript" src="js/easing.js"></script>
 </head>
 <body>
-<jsp:useBean id="news" class="newpackage.adNews" ></jsp:useBean>
+<jsp:useBean id="news" class="newpackage.News" ></jsp:useBean>
 <jsp:setProperty property="*" name="news"/>
 
 <%@page import="newpackage.mongoDb"%>

@@ -13,7 +13,8 @@ import org.bson.BSONObject;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 
-import javax.json.JsonObject;
+
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -26,7 +27,7 @@ import java.util.Map;
 public class mongoDb{
 
     private DBCollection col;
-    public static int save(Ad u) {
+    public static int save(Ad ad) {
 
         MongoClientURI uri = new MongoClientURI(
                 "mongodb+srv://Admin:admin@cluster0-eedvx.mongodb.net/testDataBase?retryWrites=true&w=majority");
