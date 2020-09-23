@@ -12,6 +12,7 @@ SQL is the most popular language for adding, accessing and managing content in a
 |K.A.Shehan Prasanna|21017688|UGC BSc(Special) MIS |shehanp12 |
 |B.O.Jayathunga|21017519|UGC BSc(Special) MIS | Binura owin |
 |S.A.L Dimantha|21089195|UGC BSc(Special) MIS | Anjana-lakshan|
+|K.S.J Jeewantha|21017461|UGC Bsc(Special) MIS | Janodh|
 
 Description of Project 
 
