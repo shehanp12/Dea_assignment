@@ -112,6 +112,40 @@ userController.toPerson(cursor.next());
 
         return ad1;
     }
+    public static int news(News u) throws UnsupportedEncodingException {
+        MongoClientURI uri = new MongoClientURI(
+                "mongodb+srv://Admin:admin@cluster0-eedvx.mongodb.net/testDataBase?retryWrites=true&w=majority");
+
+        MongoClient mongoClient = new MongoClient(uri);
+        MongoDatabase database = mongoClient.getDatabase("testDataBase");
+
+        // Retrieving a collection
+        MongoCollection<Document> collection = database.getCollection("news");
+
+
+
+//            DBObject doc = userController.toDBObject(u);
+
+//            ObjectId id = (ObjectId) doc.get("_id");
+//            u.setId(Integer.parseInt(id.toString()));
+
+        System.out.println("Document inserted successfully");
+
+        System.out.println("Collection sampleCollection selected successfully");
+//        collection.insertOne((Document) userController.toDBObject(user));
+        // Sample document.
+        Document emp2 = new Document();
+        emp2.put("title", u.getTitle());
+        emp2.put("description", u.getDescription());
+
+//        byte[] encodedBytes = Base64.getEncoder().encode((byte[]) u.getFile());
+////        byte[] encodeBase64 = Base64.encodeBase64(u.getFile());
+//        String base64DataString = new String(encodedBytes , "UTF-8");
+//        emp1.put("photo",base64DataString);
+
+        collection.insertOne(emp2);
+        return 200;
+    }
 
 
 }
