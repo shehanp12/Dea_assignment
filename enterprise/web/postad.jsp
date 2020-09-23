@@ -22,9 +22,9 @@
     try{
 
      d   int i=mongoDb.save(ad);
-        if(i>0){ response.sendRedirect("adduser-success.jsp");
+        if(i>0){ response.sendRedirect("home.jsp");
         }else{
-            response.sendRedirect("adduser-error.jsp");
+            response.sendRedirect("Error.jsp");
         }
     }catch (Exception e){
         out.print(e.getMessage());
