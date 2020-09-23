@@ -11,5 +11,10 @@ SQL is the most popular language for adding, accessing and managing content in a
 |--------------------|--------------------|--------------------|--------------------|
 |K.A.Shehan Prasanna|21017688|UGC BSc(Special) MIS |shehanp12 |
 |B.O.Jayathunga|21017519|UGC BSc(Special) MIS | Binura owin |
+|S.A.L Dimantha|21089195|UGC BSc(Special) MIS | Anjana-lakshan|
+
+Description of Project 
+
+"Home SHOPPE" website is a ecommerce site that display adds as request by buyers and show it to the web site visitors.The Registered users can post a add through our website and 
 
 
