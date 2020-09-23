@@ -24,7 +24,7 @@ The reason we use Mongodb over mysql is  when we implement the website practical
 
 We have a admin panel to manage users and we used MVC architecture to add data to the database respectivley and we can delete update and create users in the admin.
 JSP css and bootstrap used for user interface designing.
-![](enterprise/web/images/home.jpeg | width=50)
+![](enterprise/web/images/home.jpeg)
 
 
 
