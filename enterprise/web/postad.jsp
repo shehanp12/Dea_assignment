@@ -12,10 +12,10 @@
 </head>
 <body>
 
-<%@page import=""%>
+<%@page import="newpacage.mongoDb"%>
 <%@page import=""%>
 
-<jsp:useBean id="ad" class="" ></jsp:useBean>
+<jsp:useBean id="ad" class="newpacage.Ad" ></jsp:useBean>
 <jsp:setProperty property="*" name="ad"/>
 
 <%
