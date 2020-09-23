@@ -55,6 +55,14 @@
     }
 </style>
 
+    <%
+        HttpSession session3 = request.getSession();
+        String err= (String) session3.getAttribute("err");
+//        try (PrintWriter printWriter = response.getWriter()) {
+//            printWriter.println(err);
+//        }
+    %>
+
 
     <img src="images/404image.png" class="a">
     <h1 style="color: red" class="b"><%=err%></h1>
