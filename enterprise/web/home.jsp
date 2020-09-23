@@ -20,6 +20,21 @@
 <%@ page import="com.mongodb.client.MongoCollection" %>
 <%@ page import="newpackage.userController" %>
 
+<<<<<<< Updated upstream
+=======
+<%
+	try {
+
+		MongoClientURI uri = new MongoClientURI(
+				"mongodb+srv://Admin:admin@cluster0-eedvx.mongodb.net/testDataBase?retryWrites=true&w=majority");
+
+		MongoClient mongoClient = new MongoClient(uri);
+		MongoDatabase database = mongoClient.getDatabase("testDataBase");
+
+		// Retrieving a collection
+		MongoCollection<Document> collection = database.getCollection("testCollection");
+
+>>>>>>> Stashed changes
 
 <%@page import="newpackage.mongoDb"%>
 <%@ page import="com.mongodb.client.MongoCursor" %>

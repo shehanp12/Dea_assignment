@@ -21,9 +21,9 @@ import java.util.Map;
 
 /**
  *
- * @author binur
+ * @author binura
  */
-public class mongoDb {
+public class mongoDb{
 
     private DBCollection col;
     public static int save(Ad u) {
