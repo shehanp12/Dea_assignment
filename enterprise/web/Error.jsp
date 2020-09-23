@@ -56,8 +56,8 @@
 </style>
 
     <%
-        HttpSession session1 = request.getSession();
-        String err= (String) session1.getAttribute("err");
+        HttpSession session3 = request.getSession();
+        String err= (String) session3.getAttribute("err");
 //        try (PrintWriter printWriter = response.getWriter()) {
 //            printWriter.println(err);
 //        }
