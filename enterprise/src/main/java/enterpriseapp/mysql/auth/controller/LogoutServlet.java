@@ -20,7 +20,7 @@ public class LogoutServlet extends HttpServlet {
 
 
       Cookie name = new Cookie("Name", "");
-      name.setMaxAge(0);
+      name.setMaxAge(60);
       response.addCookie(name);
 
         response.sendRedirect("home.jsp");
