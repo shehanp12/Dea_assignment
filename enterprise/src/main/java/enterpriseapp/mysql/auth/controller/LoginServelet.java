@@ -18,6 +18,7 @@ public class LoginServelet extends HttpServlet {
         String Email = request.getParameter("Email");
         String Password = request.getParameter("Password");
 
+
         String err = "";
         if (Email.equals("") || Password.equals("")) {
             err += "Please enter details";
@@ -39,9 +40,11 @@ public class LoginServelet extends HttpServlet {
 
                 userDAO.login(Email,Password);
                 Cookie loginCookie = new Cookie("Email",Email);
+                Cookie name= new Cookie("Name", Email);
                 //setting cookie to expiry in 30 mins
                 loginCookie.setMaxAge(30*60);
                 response.addCookie(loginCookie);
+                response.addCookie(name);
                 response.sendRedirect("account.jsp");
 //               url = "/index.jsp";
             } else {

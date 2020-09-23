@@ -1,4 +1,11 @@
-
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/startstop-slider.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -38,10 +45,9 @@
 	     	<div class="menu">
 	     		<ul>
 			    	<li><a href="../home.jsp">Home</a></li>
-			    	<li class="active"><a href="about.html">About</a></li>
-			    	
-			    	<li><a href="news.html">News</a></li>
-			    	<li><a href="contact.html">Contact</a></li>
+			    	<li class="active"><a href="about.jsp">About</a></li>
+			    	<li><a href="news.jsp">News</a></li>
+			    	<li><a href="contact.jsp">Contact</a></li>
 			    	<div class="clear"></div>
      			</ul>
 	     	</div>
@@ -58,7 +64,7 @@
     	<div class="section group">
 				<div class="col_1_of_3 span_1_of_3">
 					
-					<img src="../images/about_img.jpg" alt="">
+					<img src="../images/shop.jpg" alt="">
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
 					<h3>&nbsp;What is ADS.lk?</h3>
@@ -88,31 +94,28 @@
 				<div class="col_1_of_4 span_1_of_4">
 						<h4>Information</h4>
 						<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Customer Service</a></li>
+						<li><a href="about.jsp">About Us</a></li>
+						<li><a href="contact.jsp">Customer Service</a></li>
 						<li><a href="#">Advanced Search</a></li>
-						<li><a href="delivery.html">Orders and Returns</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="delivery.jsp">Orders and Returns</a></li>
+						<li><a href="contact.jsp">Contact Us</a></li>
 						</ul>
 					</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>Why buy from us</h4>
 						<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Customer Service</a></li>
+						<li><a href="about.jsp">About Us</a></li>
+						<li><a href="contact.jsp">Customer Service</a></li>
 						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="contact.html">Site Map</a></li>
+						<li><a href="contact.jsp">Site Map</a></li>
 						<li><a href="#">Search Terms</a></li>
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>My account</h4>
 						<ul>
-							<li><a href="contact.html">Sign In</a></li>
-							<li><a href="../home.jsp">View Cart</a></li>
-							<li><a href="#">My Wishlist</a></li>
-							<li><a href="#">Track My Order</a></li>
-							<li><a href="contact.html">Help</a></li>
+							<li><a href="contact.jsp">Sign In</a></li>
+							
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
