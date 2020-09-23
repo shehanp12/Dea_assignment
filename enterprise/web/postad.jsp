@@ -21,7 +21,7 @@
 <%
     try{
 
-     d   int i=mongoDb.save(ad);
+       int i=mongoDb.save(ad);
         if(i>0){ response.sendRedirect("home.jsp");
         }else{
             response.sendRedirect("Error.jsp");
